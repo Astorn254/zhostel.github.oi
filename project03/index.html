@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabibu Hostel Payment Record System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zabibu Hostel Payment Record System</h1>
+    <form id="paymentForm">
+      <input type="text" id="studentName" placeholder="Enter student's name" required>
+      <input type="number" id="paymentAmount" placeholder="Enter payment amount" required>
+      <input type="date" id="paymentDate" required>
+      <button type="submit">Add Payment</button>
+    </form>
+    <h2>Student-wise Payment Records</h2>
+    <table id="paymentTable">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Payment Amount</th>
+          <th>Date</th>
+          <th>Times Paid</th>
+        </tr>
+      </thead>
+      <tbody id="paymentList"></tbody>
+    </table>
+    <h2>General Payment History</h2>
+    <table id="generalPaymentTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Student Name</th>
+          <th>Payment Amount</th>
+          <th>Number of Payments</th>
+        </tr>
+      </thead>
+      <tbody id="generalPaymentList"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
